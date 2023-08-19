@@ -158,5 +158,6 @@ module.exports = {
   addFlightsJourney,
   editFlightsJourney,
   getStopFlights,
+  getAllFlights,
   getAllFlightsDetails,
 };
