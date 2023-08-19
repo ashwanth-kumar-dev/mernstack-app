@@ -2,7 +2,6 @@ const BookingModel = require('../models/BookingModel');
 const UserModel = require('../models/UserModel');
 const getFormatedDate = require('../commonUtils');
 const FlightDetailModel = require('../models/FlightDetailModel');
-const FlightModel = require('../models/FlightDetailModel');
 const FlightModel = require('../models/FlightModel');
 
 const getAllBookings = async (req, res) => {

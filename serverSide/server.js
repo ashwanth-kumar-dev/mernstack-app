@@ -11,7 +11,7 @@ const Booking = require('./routes/BookingRoutes');
 app.use([express.json(), cors()]);
 
 mongoose
-  .connect(process.env.MONOGO_URI)
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     app.listen(process.env.PORT_NO || 4000);
     console.log("server started in port 4000");
