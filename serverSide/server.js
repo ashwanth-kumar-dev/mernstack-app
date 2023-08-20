@@ -13,8 +13,10 @@ app.use([express.json(), cors()]);
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
-    app.listen(process.env.PORT_NO || 4000);
-    console.log("server started in port 4000");
+    app.listen(process.env.PORT || 4000, ()=>{
+      console.log(`server started in port ${process.env.PORT_NO}`);
+    });
+    console.log("connected to monogodb");
   })
   .catch((err) => {
     console.error(err);
